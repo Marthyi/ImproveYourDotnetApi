@@ -5,6 +5,10 @@ VisualStudioVersion = 17.1.32407.343
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Api", "src\Demo.Api\Demo.Api.csproj", "{BED5DB73-3B83-46BF-92C2-F42FCBD6FF52}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Minimal.Api", "Demo.Minimal.Api\Demo.Minimal.Api.csproj", "{250253C8-AD06-4365-8135-090986C8AE06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoAuthentication", "DemoAuthentication\DemoAuthentication.csproj", "{97E7534E-F7E6-4133-9DAB-01AFB77E6A51}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{BED5DB73-3B83-46BF-92C2-F42FCBD6FF52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BED5DB73-3B83-46BF-92C2-F42FCBD6FF52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BED5DB73-3B83-46BF-92C2-F42FCBD6FF52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{250253C8-AD06-4365-8135-090986C8AE06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{250253C8-AD06-4365-8135-090986C8AE06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{250253C8-AD06-4365-8135-090986C8AE06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{250253C8-AD06-4365-8135-090986C8AE06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97E7534E-F7E6-4133-9DAB-01AFB77E6A51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97E7534E-F7E6-4133-9DAB-01AFB77E6A51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97E7534E-F7E6-4133-9DAB-01AFB77E6A51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97E7534E-F7E6-4133-9DAB-01AFB77E6A51}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

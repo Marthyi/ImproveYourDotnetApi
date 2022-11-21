@@ -12,12 +12,12 @@ public class TaskControllerV1 : Controller
 
     }
 
-    [HttpGet("")]
-    public async Task<IActionResult> GetTasks()
-    {
-        await Task.Delay(100);
-        throw new NotImplementedException();
-    }
+    //[HttpGet("")]
+    //public virtual async Task<IActionResult> GetTasks()
+    //{
+    //    await Task.Delay(100);
+    //    throw new NotImplementedException("this is a buggy version");
+    //}
 
     [HttpPost("")]
     /// <param name="id" example="123">The product id</param>

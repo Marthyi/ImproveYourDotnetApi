@@ -25,17 +25,18 @@ public class ExceptionMiddleware
         {
             logger.LogError(ex, $"An error was ocurred during the process. Trace Identifier: {accessor.HttpContext.TraceIdentifier}.");
 
-            await HandleExceptionMessageAsync(accessor.HttpContext).ConfigureAwait(false);
+            await HandleExceptionMessageAsync(accessor.HttpContext, ex).ConfigureAwait(false);
         }
     }
 
-    private static Task HandleExceptionMessageAsync(HttpContext context)
+    private static Task HandleExceptionMessageAsync(HttpContext context, Exception ex)
     {
         string response = JsonSerializer.Serialize(new ValidationProblemDetails()
         {
             Title = "An error was occurred.",
             Status = (int)HttpStatusCode.InternalServerError,
             Instance = context.Request.Path,
+            Detail = ex.Message
         });
 
         context.Response.ContentType = "application/json";
